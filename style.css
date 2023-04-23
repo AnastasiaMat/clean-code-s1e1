@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.logo-container img {
+.logo-container .header-img {
   width: 100%;
 }
 
@@ -44,22 +44,20 @@ body {
   display: flex;
 }
 
-ul {
+.tasks-list {
   margin: 0;
   padding: 0px;
 }
 
-li, 
-h3 {
+.no-list {
   list-style: none;
 }
 
-input,
-button {
+.no-outline {
   outline: none;
 }
 
-button {
+.common-btn {
   background: none;
   border: 0px;
   color: #888;
@@ -67,15 +65,15 @@ button {
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  outline: none;
 }
 
-button:hover {
+.common-btn:hover {
   color: #3a3A3a;
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+.item-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +83,7 @@ label[for='new-task'] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,12 +96,12 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.task-input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
+.add-section-title{
   display: block;
   margin: 0 0 20px;
 }
